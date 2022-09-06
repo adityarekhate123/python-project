@@ -1,0 +1,45 @@
+#Program make a simple calculator
+
+# This function taking input from user
+first=input("enter first number")
+
+#This function taking operator input from the user 
+
+operator=input("+,÷,/,-,*,%")
+
+#This function also  taking second input from the user 
+
+second=input("enter second number")
+
+#covert string to integer
+
+first=int(first)
+
+second=int(second)
+
+# This function adds two numbers
+if operator=="+":
+
+    print(first+second)
+
+#This function subtract two numbers
+elif operator=="-":
+    print(first-second)
+
+#This function multiply two numbers 
+elif operator=="*":
+    print(first*second)
+
+#This function divide two numbers
+
+elif operator=="/":
+    print (first/second)
+
+#This function taking module of two numbers
+elif operator=="%":
+    print(first%second)
+
+#This function provide invalid operation after checking above all conditions not met
+# check if user wants another calculation # break the while loop if answer is no next_calculation = input("Let's do next calculation? (yes/no): ") if next_calculation == "no": break
+else:
+    print("invalid operation")
